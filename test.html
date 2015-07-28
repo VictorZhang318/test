@@ -1,13 +1,14 @@
+ADD1
 {
   "partner": {
-    "id": "xxxxxxx",
+    "id": "xxxxxxxx",
     "description": "人人分期",
     "product": "RRFQ"
   },
   "base": {
-    "version": "3.2.0",
+    "version": "3.1.0",
     "compatibleTo": "2.0.0",
-    "SLA": "",
+    "SLA": 0,
     "token": "uuid",
     "tokenType": 0
   },
@@ -45,10 +46,13 @@
       "degreeId": 6,
       "enrolledAt": "2008-09-17",
       "graduatedAt": "2012-06-17",
-      "province": 110000,
-      "city": 110000,
-      "district": 110101,
-      "street": "Nanshan Road"
+      "address": {
+        "type": "education",
+        "province": 110000,
+        "city": 110000,
+        "district": 110101,
+        "street": "Nanshan Road"
+      }
     },
     "contacts": [
       {
@@ -105,30 +109,21 @@
       "studentIdProfilePhoto": "学生证信息页照片路径",
       "studentIdCoverPhoto": "学生证封面照片路径"
     },
-    "deviceInfo": {
-      "model": "HTC D816t",
-      "osVersion": "5.0.2",
-      "uuid": "353463060377135",
-      "gps": "24.490438,110.394355",
-      "contactCount": 100,
-      "ip": "127.0.0.1",
-      "mac": "00:ee:bd:8e:7c:6c",
-      "sourceId": 1
-    },
     "authorizedData": {
       "alipay": "xxxxxxxxxxxxxxxxxxxxxxxxx"
     },
     "bankCard": {
-      "account_no": "xxxxxx",
+      "accountNo": "xxxxxx",
       "bank": "中国工商银行",
       "province": 110000,
       "city": 110000
     },
     "applicationInfo": {
-      "tenor": "6M",
       "amount": 8000,
+      "tenor": "6M",
       "orderNo": "xxxxx",
-      "description": "xxxxxxx"
+      "description": "xxxxxxx",
+      "sourceId": 1
     }
   },
   "signature": "xxxxxxxxxxxxxxxxxxxx"
